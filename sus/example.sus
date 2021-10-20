@@ -1,0 +1,19 @@
+token = "yourtokenhere"
+
+onReady
+    print("eee")
+end
+
+onMemberJoin
+    reply("welcome --authorMention")
+end
+
+command(ping)
+    reply("pong")
+end
+
+onMessageSent
+    if --messageContent == "sus":
+        reply("no u")
+    end
+end
